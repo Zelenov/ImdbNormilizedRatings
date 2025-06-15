@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movies with Correct Ratings</title>
+  <style>
+    body { width:300px; margin:0; padding:0; font-family:Arial,sans-serif; background:#fff; }
+    .header { background:#00cc66; height:80px; position:relative; display:flex; align-items:center; justify-content:center; }
+    .header svg { width:40px; height:40px; fill:#fff; }
+    .header::after { content:""; position:absolute; bottom:-9px; left:50%; transform:translateX(-50%); border-width:10px 10px 0; border-style:solid; border-color:#00cc66 transparent; }
+    .content { padding:20px; text-align:center; }
+    .counter { display:inline-flex; align-items:center; font-size:1.5em; font-weight:bold; gap:8px; }
+    .spinner { width:16px; height:16px; border:3px solid #f3f3f3; border-top:3px solid #333; border-radius:50%; animation:spin 1s linear infinite; }
+    @keyframes spin { to{ transform:rotate(360deg); } }
+    .message { margin-top:10px; font-size:14px; color:#333; }
+    .button-container { margin-top:20px; }
+    .button { display:inline-block; padding:10px 20px; background:#00cc66; color:#fff; text-decoration:none; border-radius:20px; font-size:14px; }
+  </style>
+</head>
+<body>
+    <div class="header">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="presentation">
+        <path d="M12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.10-4.72 3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41-1.89-4.46c-.34-.81-1.50-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18-1.10 4.72c-.20.86.73 1.54 1.49 1.08L12 17.27z"/>
+      </svg>
+    </div>
+    <div class="content">
+      <div class="counter">
+        <span id="movieCount">0</span>
+        <div class="spinner" id="spinner"></div>
+      </div>
+      <div class="message">movies now have mathematically correct rating on IMDB</div>
+      <div class="button-container">
+        <a class="button" id="compareBtn" target="_blank">Compare Ratings</a>
+      </div>
+    </div>
+  <script src="popup.js"></script>
+</body>
+</html>
