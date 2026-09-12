@@ -1,3 +1,5 @@
+![IMDb Rating Normalizer](chrome-extension/promotional.440x280.png)
+
 # IMDB Rating Normalizer
 
 **What you thought was a 7/10 ‘average’ movie is really a 5/10.**
@@ -20,3 +22,10 @@ People rarely use the full 1–10 scale.
 
 Uses a probability-integral transform followed by an inverse-normal mapping to recenter ratings at 5.5.
 
+## Screenshots
+
+![The Shawshank Redemption](chrome-extension/screenshot.3.shawshank.jpg)
+
+![Snow](chrome-extension/screenshot.2.snow.jpg)
+
+![Avengers](chrome-extension/screenshot.1.avengers.jpg)
