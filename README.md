@@ -6,6 +6,10 @@
 
 A Chrome extension that shows a normalized IMDB rating next to the official one, correcting for human rating biases.
 
+## Install
+
+[**Get it from the Chrome Web Store**](https://chromewebstore.google.com/detail/imdb-normalized-ratings/ofglgfmenoenlfpknjflkcimjiijnedk), or load `src/chrome-extension` unpacked (chrome://extensions → Developer mode → Load unpacked).
+
 ## Motivation
 
 People rarely use the full 1–10 scale.
